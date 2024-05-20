@@ -23,7 +23,7 @@ export default function bs_list(haystack: number[], needle: number): boolean {
 // when value is greater than needle
 // when value is less than needle
 
-function bs_list2(haystack: number[], needle: number): boolean {
+function binary(haystack: number[], needle: number): boolean {
     let lo = 0;
     let hi = haystack.length;
 

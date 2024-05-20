@@ -21,7 +21,8 @@ export default function two_crystal_balls(breaks: boolean[]): number {
     // go back 
     i -= jmpAmount;
 
-    for (let j = 0; j < jmpAmount && i < breaks.length; j++, i++) {
+    // linearly walk forward (at most sqrt of n) till you break
+    for (let j = 0; j <= jmpAmount && i < breaks.length; j++, i++) {
         if (breaks[i]) {
             return i;
         }
